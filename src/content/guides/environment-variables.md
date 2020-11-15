@@ -32,7 +32,7 @@ __webpack.config.js__
 ``` js
 const path = require('path');
 
-module.exports = env => {
+module.exports = env => ({
   // Use env.<YOUR VARIABLE> here:
   console.log('NODE_ENV: ', env.NODE_ENV); // 'local'
   console.log('Production: ', env.production); // true
@@ -44,5 +44,5 @@ module.exports = env => {
       path: path.resolve(__dirname, 'dist'),
     },
   };
-};
+});
 ```
